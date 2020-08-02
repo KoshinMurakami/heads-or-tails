@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 class HeadsOrTails {
     
@@ -13,8 +14,17 @@ class HeadsOrTails {
     }
 
     public static void main(String[] args) {
+        Scanner stdIn = new Scanner(System.in);
+
         String result;//tossCoin()'s result
         int count = 0;//Heads's count
+        String name;//user name
+        
+        //greeting the user
+        System.out.println("Who are you?");
+        System.out.print("> ");
+        name = stdIn.nextLine();
+        System.out.println("Hello, " + name + "!");
 
         //coin toss
         System.out.println("Tossing a coin...");
