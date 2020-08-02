@@ -29,5 +29,11 @@ class HeadsOrTails {
 
         System.out.print("Heads:" + count);
         System.out.println(", Tails:" + (3 - count));
+
+        if (count >= 2) {
+            System.out.println("You won!");
+        } else {
+            System.out.println("You lost.");
+        }
     }
 }
